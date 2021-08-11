@@ -1,0 +1,69 @@
+/* Primery Theme Colors */
+/* Text Color */
+a,
+p a,
+p a:hover,
+a:hover,
+a:focus,
+a:active,
+.wt-navigation > ul > li:hover > a,
+.wt-navigation > ul > li.current-menu-item > a,
+.wt-navarticletab li:hover a,
+.wt-navarticletab li a.active,
+.wt-categoriescontent li a:hover,
+.wt-joinsteps li.wt-active a,
+.wt-effectivecontent li:hover a,
+.wt-articlesingle-content .wt-description .wt-blockquotevone q,
+.wt-filtertag li:hover a,
+.wt-userlisting-breadcrumb li .wt-clicksave,
+.wt-clicksave,
+.tg-qrcodefeat h3 span,
+.wt-comfollowers ul li:hover a span,
+.wt-postarticlemeta .wt-following span
+
+
+{ color: #00cc99; }
+/* Background Color */
+.wt-btn:hover,
+.wt-dropdowarrow,
+.navbar-toggle,
+.wt-btn,
+.wt-navigationarea .wt-navigation > ul > li > a:after,
+.wt-searchbtn,
+.wt-sectiontitle:after,
+.wt-navarticletab li a:after,
+.wt-pagination ul li a:hover,
+.wt-pagination ul li.wt-active a,
+.wt-widgettag a:hover,
+.wt-articlesingle-content .wt-description blockquote span i,
+.wt-searchgbtn,
+.wt-filtertagclear a,
+.ui-slider-horizontal .ui-slider-range,
+.wt-btnsearch,
+.wt-newnoti a em,
+.wt-notificationicon > a:after,
+.wt-rightarea .wt-nav .navbar-toggler,
+.wt-usersidebaricon span,
+.wt-usersidebaricon span i,
+.wt-filtertag .wt-filtertagclear a,
+.loader:before
+
+
+{ background:#00cc99; }
+
+/* Border Color */
+.select select:focus,
+.form-control:focus,
+.wt-navigation > ul > li > .sub-menu,
+.wt-pagination ul li a:hover,
+.wt-widgettag a:hover,
+.wt-joinsteps li.wt-active a,
+.wt-filtertag li:hover a,
+.wt-filtertag .wt-filtertagclear a,
+.wt-themerangeslider .ui-slider-handle,
+.wt-clicksavebtn,
+.wt-pagination ul li.wt-active a,
+.wt-usernav > ul
+
+{ border-color: #00cc99; }
+.wt-filtertag .wt-filtertagclear a:after{ border-left-color: #00cc99; }

@@ -1,0 +1,82 @@
+.ColorSwitcher,
+.ColorSwitcher * {box-sizing: border-box;}
+.ColorSwitcher {
+	position: fixed;
+	top: 50%;
+	z-index:99;
+	right: -62px;
+	width: 60px;
+	padding:10px;
+	background: #fff;
+	border-radius: 10px 0 0 10px;
+	box-shadow: 0 0 15px rgba(0,0,0,.15);
+	-webkit-transform: translateY(-80%);
+			transform: translateY(-80%);
+	-webkit-transition: left .2s;
+	transition: right .2s;
+}
+.ColorSwitcher__switch{
+	width:40px;
+	height:40px;
+	margin:5px 0;
+	border-radius:10px;
+}
+.ColorSwitcher--open {right: 0;}
+.ColorSwitcher__control,
+.ColorSwitcher__switch {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	padding: 0;
+	border: 0;
+	cursor: pointer;
+	-webkit-transition: all .2s;
+	transition: all .2s;
+}
+.ColorSwitcher__control:focus,
+.ColorSwitcher__switch:focus {outline: 0;}
+.ColorSwitcher__control {
+	right: 100%;
+	color: #fff;
+	top: 50%;
+	margin-top:-25px; 
+	background: #fff;
+	position: absolute;
+	border-radius: 10px 0 0 10px;
+	box-shadow: 0 0 20px rgba(0,0,0,.15);
+}
+.ColorSwitcher__control:before {
+	content: '';
+	height: 100%;
+	width: 100%;
+	display: inline-block;
+	background-size: 45%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(../images/color-gear.png);
+	-webkit-animation: controlSpin 4s linear infinite;
+			animation: controlSpin 4s linear infinite;
+}
+.ColorSwitcher--open .ColorSwitcher__control {background: #fff;}
+.ColorSwitcher--open .ColorSwitcher__control:before {
+	background-image: url(../images/color-gear.png);
+	background-size:20px 20px;
+}
+.ColorSwitcher__switchs {margin: -5px;}
+.ColorSwitcher__switch {
+	margin: 5px;
+	border-radius: 10px;
+}
+@-webkit-keyframes controlSpin {
+	100% {
+		-webkit-transform:rotate(360deg);
+				transform:rotate(360deg);
+	}
+}
+
+@keyframes controlSpin {
+	100% {
+		-webkit-transform:rotate(360deg);
+				transform:rotate(360deg);
+	}
+}

@@ -2,9 +2,23 @@
 
  $get_route = explode('/',$_SERVER['REQUEST_URI']);
 
-  $route = $get_route[2];
+  $route = $get_route[2]; 
+  
+ if($route == "login"){ 
  
- if($route == "home"){ 
+ 	$controller="Auth"; 
+	$function="login";
+	include_once("route/web.php");
+	
+ }
+ if($route == "register"){ 
+ 
+ 	$controller="Auth"; 
+	$function="register";
+	include_once("route/web.php");
+	
+ }
+ if($route == "home"){
 
  	$controller="home"; 
 	$function="home";
@@ -13,7 +27,7 @@
  }
  if($route == "about"){
 
- 	$controller="home";
+ 	$controller="home"; 
 	$function="about";
 	include_once("route/web.php");
 	
@@ -22,6 +36,27 @@
 
  	$controller="home";
 	$function="contact";
+	include_once("route/web.php");
+	
+ }
+ if($route == "privacypolicy"){
+
+ 	$controller="home";
+	$function="privacypolicy";
+	include_once("route/web.php");
+	
+ }
+ if($route == "submitlogin"){
+
+ 	$controller="auth";
+	$function="submitlogin";
+	include_once("route/web.php");
+	
+ }
+ if($route == "logout"){
+
+ 	$controller="auth";
+	$function="logout";
 	include_once("route/web.php");
 	
  }
