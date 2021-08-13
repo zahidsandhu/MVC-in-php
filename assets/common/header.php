@@ -6,7 +6,7 @@
 	<title>FARNEK SERVICES LTD</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+	<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" >
 	<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/normalize.css">
@@ -116,9 +116,9 @@
 															<span>Manage Designation</span>
 														</a>
 														<ul class="sub-menu children">
-															<li><a href="dashboard-employee-designation.php">Admin Designation</a></li>
-															<li><a href="dashboard-user-designation.php">User Designation</a></li>
-															<li><a href="dashboard-guard-designation.php">Guard Designation</a></li>
+															<li><a href="employee-designation">Admin Designation</a></li>
+															<li><a href="user-designation">User Designation</a></li>
+															<li><a href="guard-designation">Guard Designation</a></li>
 														</ul>
 													</li>
 

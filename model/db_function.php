@@ -2,7 +2,7 @@
 
  class MyFunction
  {
-    
+     
 
     // function test_input($data) {
     //   $data = trim($data);
@@ -11,6 +11,44 @@
     //   $data = mysqli_real_escape_string($this->conn,$data);;
     //   return $data;
     // }
+function img_upload($data_file, $path){
+     $base_name = $data_file['name'];
+     $file_type = $data_file['type'];
+     $img_size = $data_file['size'];
+     $tmp_name = $data_file['tmp_name'];
+
+     // convert file name in array
+     $fileName_array = explode(".", $base_name);
+     $fileExtension = strtolower(end($fileName_array));
+
+     $allowedfileExtensions = array('jpg', 'jpeg', 'png');
+
+     //check file extention
+     if (in_array($fileExtension, $allowedfileExtensions)) {
+
+        // check file size
+        if($img_size <= 10000000){
+            $pre_image_name=time();
+            $img_new_name= $pre_image_name . $data_file['name'];
+
+        if(move_uploaded_file($data_file['tmp_name'],$path . $img_new_name)){
+            return  $img_new_name;
+        }
+
+            //return $image_info;
+        }else{
+            return "10-MB";
+        }
+
+    }else{
+            return "file extentions";
+    }
+
+
+} 
+// function end
+
+
     function insertedid()
     {
         $id = mysqli_insert_id($this->conn);
@@ -95,15 +133,15 @@
         return $res[0]['total'];
     }
 
-    function selectall($tablename)
+    function selectall($tablename,$conn)
     {
         $sql = ("SELECT * FROM $tablename");
         $this->lastsql = $sql;
         
-        $query = $this->query($sql);
+        $query = $this->query($sql,$conn);
 
         if (!$query) {
-            return "Could not successfully run query ($sql) from DB: " . mysqli_error($this->$conn) . "method selectdata";
+            return "Could not successfully run query ($sql) from DB: " . mysqli_error($conn) . "method selectdata";
             exit;
         }
         return $this->res2arr($query);
@@ -158,13 +196,13 @@
         return $this->res2arr($query);
     }
 
-    function insert($tablename, $fields, $values, $replace = false)
+    function insert($tablename, $fields, $values, $conn,$replace = false)
     {
         if ($replace){
-            return $this->query("replace into $tablename ($fields) VALUES ($values)") or die(mysqli_error($this->conn));
+            return $this->query("replace into $tablename ($fields) VALUES ($values)") or die(mysqli_error($conn));
         }
         else{
-            return $this->query("INSERT INTO $tablename ($fields) VALUES ($values)") or die(mysqli_error($this->conn));
+            return $this->query("INSERT INTO $tablename ($fields) VALUES ($values)",$conn) or die(mysqli_error($conn));
         }
     }
 

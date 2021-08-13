@@ -1,26 +1,26 @@
    </div>
 </div>
 	<!--Wrapper End-->
-	<script src="js/vendor/jquery-3.3.1.js"></script>
-	<script src="js/vendor/jquery-library.js"></script>
-	<script src="js/vendor/bootstrap.min.js"></script>
-	<script src="https://maps.google.com/maps/api/js?key=AIzaSyCR-KEWAVCn52mSdeVeTqZjtqbmVJyfSus&language=en"></script>
-	<script src="js/jquery.basictable.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.sortable.js"></script>
-	<script src="js/chosen.jquery.js"></script>
-	<script src="js/tilt.jquery.js"></script>
-	<script src="js/scrollbar.min.js"></script>
-	<script src="js/prettyPhoto.js"></script>
-	<script src="js/jquery-ui.js"></script>
-	<script src="js/readmore.js"></script>
-	<script src="js/countTo.js"></script>
-	<script src="js/appear.js"></script>
-	<script src="js/tipso.js"></script>
-	<script src="js/gmap3.js"></script>
-	<script src="js/jRate.js"></script>
-	<script src="js/chart.js"></script>
-	<script src="js/main.js"></script>
+	<script src="assets/js/vendor/jquery-3.3.1.js"></script>
+	<script src="assets/js/vendor/jquery-library.js"></script>
+	<script src="assets/js/vendor/bootstrap.min.js"></script>
+	<script src="assets/https://maps.google.com/maps/api/js?key=AIzaSyCR-KEWAVCn52mSdeVeTqZjtqbmVJyfSus&language=en"></script>
+	<script src="assets/js/jquery.basictable.min.js"></script>
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<script src="assets/js/jquery.sortable.js"></script>
+	<script src="assets/js/chosen.jquery.js"></script>
+	<script src="assets/js/tilt.jquery.js"></script>
+	<script src="assets/js/scrollbar.min.js"></script>
+	<script src="assets/js/prettyPhoto.js"></script>
+	<script src="assets/js/jquery-ui.js"></script>
+	<script src="assets/js/readmore.js"></script>
+	<script src="assets/js/countTo.js"></script> 
+	<script src="assets/js/appear.js"></script>
+	<script src="assets/js/tipso.js"></script>
+	<script src="assets/js/gmap3.js"></script>
+	<script src="assets/js/jRate.js"></script>
+	<script src="assets/js/chart.js"></script>
+	<script src="assets/js/main.js"></script>
 	<script>
 		const menu_icon = document.querySelector('.menu-icon');
 		function addClassFunThree() {

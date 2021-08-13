@@ -2,7 +2,7 @@
 
  $get_route = explode('/',$_SERVER['REQUEST_URI']);
 
-  $route = $get_route[2]; 
+    $route = $get_route[2];
   
  if($route == "login"){ 
  
@@ -57,6 +57,27 @@
 
  	$controller="auth";
 	$function="logout";
+	include_once("route/web.php");
+	
+ }
+ if($route == "employee-designation"){
+
+ 	$controller="home";
+	$function="employee_designation";
+	include_once("route/web.php");
+	
+ }
+ if($route == "user-designation"){
+
+ 	$controller="home";
+	$function="user_designation";
+	include_once("route/web.php");
+	
+ }
+ if($route == "guard-designation"){
+
+ 	$controller="home";
+	$function="guard_designation";
 	include_once("route/web.php");
 	
  }
